@@ -182,7 +182,7 @@ export default function Services() {
                     className={`w-full bg-white border border-gray-200 hover:border-transparent hover:text-white group-hover:bg-gradient-to-r ${service.gradientFrom} ${service.gradientTo} transition-all duration-300`}
                     onClick={() => (window.location.href = service.href)}
                   >
-                    <span className="flex items-center justify-center w-full">
+                    <span className="flex items-center justify-center w-full text-gray-800 group-hover:text-white">
                       Mehr erfahren
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </span>

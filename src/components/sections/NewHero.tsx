@@ -102,9 +102,9 @@ export default function NewHero() {
               <div className="mt-6 space-y-4">
                 {/* Bar 1 */}
                 <div className="space-y-2">
-                  <div className="flex justify-between text-xs text-gray-300">
+                  <div className="flex justify-between text-xs text-white font-medium">
                     <span>Organischer Traffic</span>
-                    <span>+320%</span>
+                    <span className="text-[#94f3f6]">+320%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2.5">
                     <motion.div
@@ -118,9 +118,9 @@ export default function NewHero() {
 
                 {/* Bar 2 */}
                 <div className="space-y-2">
-                  <div className="flex justify-between text-xs text-gray-300">
+                  <div className="flex justify-between text-xs text-white font-medium">
                     <span>Conversion Rate</span>
-                    <span>+175%</span>
+                    <span className="text-[#756AF2]">+175%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2.5">
                     <motion.div
@@ -134,9 +134,9 @@ export default function NewHero() {
 
                 {/* Bar 3 */}
                 <div className="space-y-2">
-                  <div className="flex justify-between text-xs text-gray-300">
+                  <div className="flex justify-between text-xs text-white font-medium">
                     <span>ROI</span>
-                    <span>+250%</span>
+                    <span className="text-purple-500">+250%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2.5">
                     <motion.div
@@ -150,9 +150,9 @@ export default function NewHero() {
 
                 {/* Bar 4 */}
                 <div className="space-y-2">
-                  <div className="flex justify-between text-xs text-gray-300">
+                  <div className="flex justify-between text-xs text-white font-medium">
                     <span>Brand Awareness</span>
-                    <span>+210%</span>
+                    <span className="text-pink-500">+210%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2.5">
                     <motion.div
@@ -166,45 +166,6 @@ export default function NewHero() {
               </div>
             </div>
           </motion.div>
-        </div>
-
-        {/* Success Card */}
-        <motion.div
-          className="mt-12 sm:mt-16 md:mt-24 lg:mt-32 max-w-md mx-auto lg:mx-0 bg-[#14112a]/60 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-[#756AF2]/20 relative overflow-hidden"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <h3 className="text-2xl font-bold text-white mb-2">
-            Ihr Unternehmen zu
-          </h3>
-          <p className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#756AF2] to-[#94f3f6]">
-            ERFOLG FÜHREN
-          </p>
-          <div className="mt-4 flex items-end relative">
-            <div className="w-1/3 h-8 bg-gray-700/50 rounded"></div>
-            <div className="w-1/3 h-12 bg-gray-600/50 mx-2 rounded"></div>
-            <div className="w-1/3 h-16 bg-[#94f3f6]/70 rounded relative">
-              <div className="absolute -top-4 right-0 w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center transform rotate-12">
-                <span className="text-lg">★</span>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Client Logos */}
-      <div className="relative z-20 mt-auto py-6 sm:py-8 bg-[#0a0a0a]/80 backdrop-blur-sm border-t border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
-            {["WhitePeak", "Kunden", "Logos", "Hier", "Einfügen"].map(
-              (logo, index) => (
-                <div key={index} className="text-gray-500 text-sm font-medium">
-                  {logo}
-                </div>
-              ),
-            )}
-          </div>
         </div>
       </div>
     </section>
