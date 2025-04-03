@@ -31,5 +31,9 @@ export default defineConfig({
   server: {
     // @ts-ignore
     allowedHosts: true,
-  }
+  },
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
 });
