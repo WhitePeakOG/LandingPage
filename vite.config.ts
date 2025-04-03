@@ -35,5 +35,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        worker: path.resolve(__dirname, "src/worker.ts"),
+      },
+      output: {
+        entryFileNames: "worker.js",
+        format: "es",
+      },
+    },
   },
 });

@@ -2,13 +2,17 @@ import { createClient } from "@supabase/supabase-js";
 
 // Get environment variables from either Vite or Cloudflare Workers
 const getEnvVar = (key: string, fallback: string): string => {
-  // Try Vite environment first
+  // Try Cloudflare Workers environment first
+  if (typeof globalThis !== 'undefined' && globalThis[key]) {
+    return globalThis[key];
+  }
+  // Try Vite environment
   if (import.meta.env[key]) {
     return import.meta.env[key];
   }
-  // Try Cloudflare Workers environment
-  if (globalThis[key]) {
-    return globalThis[key];
+  // Try process.env (for Node.js environment)
+  if (typeof process !== 'undefined' && process.env[key]) {
+    return process.env[key];
   }
   return fallback;
 };
