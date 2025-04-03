@@ -27,7 +27,7 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import { motion } from "framer-motion";
 import { Calendar, CheckCircle, Clock, Mail, Phone, User } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {

@@ -8,7 +8,7 @@ import CaseStudy from "./sections/CaseStudy";
 import Certifications from "./sections/Certifications";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
