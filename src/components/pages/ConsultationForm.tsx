@@ -94,7 +94,16 @@ export default function ConsultationForm() {
 
       // Prepare data for database
       const contactData = {
-        ...values,
+        firstName: values.firstName,
+        lastName: values.lastName,
+        email: values.email,
+        phone: values.phone,
+        company: values.company,
+        services: values.services,
+        message: values.message,
+        urgency: values.urgency,
+        budget: values.budget,
+        newsletter: values.newsletter,
         createdAt: new Date().toISOString(),
       };
 
