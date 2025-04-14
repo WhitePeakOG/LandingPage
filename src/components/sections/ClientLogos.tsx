@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 export default function ClientLogos() {
@@ -51,19 +51,9 @@ export default function ClientLogos() {
     },
   ];
 
-  // Duplicate logos for continuous carousel effect
-  const duplicatedLogos = [...logos, ...logos, ...logos];
-
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  // Create a doubled array for continuous carousel effect
+  // Using only two copies instead of three to reduce DOM elements
+  const carouselLogos = [...logos, ...logos];
 
   return (
     <section className="py-16 bg-gray-50">
@@ -85,7 +75,7 @@ export default function ClientLogos() {
         </motion.div>
 
         <div ref={containerRef} className="relative overflow-hidden py-4">
-          {/* Logo Carousel */}
+          {/* Logo Carousel - Optimized animation */}
           <div className="w-full overflow-hidden">
             <motion.div
               className="flex items-center"
@@ -98,11 +88,10 @@ export default function ClientLogos() {
                   repeat: Infinity,
                   ease: "linear",
                   repeatType: "loop",
-                  repeatDelay: 0,
                 },
               }}
             >
-              {duplicatedLogos.map((logo, index) => (
+              {carouselLogos.map((logo, index) => (
                 <div
                   key={`${logo.id}-${index}`}
                   className="flex-shrink-0 mx-8 w-[150px] opacity-80 hover:opacity-100 transition-opacity duration-300"
@@ -118,6 +107,7 @@ export default function ClientLogos() {
                       src={logo.src}
                       alt={logo.alt}
                       className="h-16 w-[150px] object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
+                      loading="lazy"
                     />
                   </a>
                 </div>
