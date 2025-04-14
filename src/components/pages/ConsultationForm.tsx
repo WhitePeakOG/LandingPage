@@ -80,7 +80,15 @@ export default function ConsultationForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      services: [],
+      firstName: "",       // expliziter leerer String
+      lastName: "",
+      email: "",
+      phone: "",
+      company: "",
+      services: [],        // Array bleibt wie gehabt
+      message: "",
+      urgency: "medium",   // oder der gewünschte Standardwert
+      budget: "none",
       newsletter: false,
     },
   });
@@ -88,7 +96,8 @@ export default function ConsultationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit() {
+    const values: z.infer<typeof formSchema> = form.getValues();
     try {
       setIsSubmitting(true);
       setSubmitError(null);
@@ -131,13 +140,15 @@ export default function ConsultationForm() {
 
         // Send email using EmailJS
         const response = await emailjs.send(
-          "service_id", // Replace with your EmailJS service ID
-          "template_id", // Replace with your EmailJS template ID
+          "whitepeakmail", // Replace with your EmailJS service ID
+          "whitepeaktemplate", // Replace with your EmailJS template ID
           templateParams,
-          "public_key", // Replace with your EmailJS public key
+          { publicKey: "IUiGXftUkzg1b1CU_"}
         );
 
-        if (!response.ok) {
+        console.log("response: ", response);
+
+        if (response.status !== 200) {
           throw new Error("Fehler beim Senden der E-Mail");
         }
 
@@ -720,9 +731,9 @@ export default function ConsultationForm() {
                       </Button>
                     ) : (
                       <Button
-                        type="submit"
                         className="bg-brand-secondary hover:bg-brand-primary"
                         disabled={isSubmitting}
+                        onClick={() => onSubmit()}
                       >
                         {isSubmitting ? (
                           <span className="flex items-center">
