@@ -125,8 +125,6 @@ export default function ConsultationForm() {
           from_name: `${contactData.firstName} ${contactData.lastName}`,
           from_email: contactData.email,
           subject: `Neue Kontaktanfrage von ${contactData.firstName} ${contactData.lastName}`,
-          firstName: contactData.firstName,
-          lastName: contactData.lastName,
           email: contactData.email,
           phone: contactData.phone,
           company: contactData.company || "Nicht angegeben",
