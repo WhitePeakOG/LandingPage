@@ -8,7 +8,7 @@ export default function CaseStudy() {
 
   const caseStudies = [
     {
-      client: "TechStart GmbH",
+      client: "Servas.AI Flex",
       industry: "SaaS / Tech",
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop&q=60",
@@ -36,10 +36,10 @@ export default function CaseStudy() {
       description:
         "Durch gezielte Content-Strategie und Community Management konnten wir das Engagement signifikant steigern und die Lead-Generierung mehr als verdoppeln.",
       tags: ["Social Media", "Content Marketing", "Lead Generation"],
-      year: "2023",
+      year: "2025",
     },
     {
-      client: "FashionNow",
+      client: "Grusee",
       industry: "E-Commerce",
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
@@ -67,10 +67,10 @@ export default function CaseStudy() {
       description:
         "Optimierte Meta & Google Ads Kampagnen führten zu einer deutlichen Steigerung des Return on Ad Spend und einer Conversion-Rate-Steigerung von 75%.",
       tags: ["Performance Marketing", "Google Ads", "Meta Ads"],
-      year: "2023",
+      year: "2025",
     },
     {
-      client: "IndustrySolutions",
+      client: "Huber Signage GmbH",
       industry: "B2B / Manufacturing",
       image:
         "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&auto=format&fit=crop&q=60",
@@ -98,7 +98,7 @@ export default function CaseStudy() {
       description:
         "Durch SEO-optimierten Content und gezielte Backlink-Strategie konnten wir den organischen Traffic vervierfachen und die Anzahl der qualifizierten Leads deutlich steigern.",
       tags: ["SEO", "Content Marketing", "B2B"],
-      year: "2022",
+      year: "2024",
     },
   ];
 

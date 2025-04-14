@@ -5,46 +5,43 @@ import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 const certifications = [
   {
     name: "Google Ads Search",
-    image: "/images/certifications/ads-search.png",
+    image: "/images/certifications/googleads.png",
     issuer: "Google",
-    year: "2023",
+    year: "2025",
     description:
       "Expertise in der Erstellung und Optimierung von Google Suchanzeigen",
     link: "#",
   },
   {
     name: "Google Analytics",
-    image:
-      "https://lh3.googleusercontent.com/JMYTnLvCsXZvGQQer7OMnFEDh_NP-GsBrjMTds_LSOdVWUY9_xmzgQdMnKPZ05PVsIcQYQmJfJ4XU1Zj6-tT3qzr=w128-h128-e365-rj-sc0x00ffffff",
+    image: "/images/certifications/googleanalytics.png",
     issuer: "Google",
-    year: "2023",
+    year: "2024",
     description: "Professionelle Analyse und Auswertung von Website-Daten",
     link: "#",
   },
   {
     name: "Meta Blueprint",
-    image:
-      "https://scontent.fvie1-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-blueprint-certification-logo.svg?_nc_cat=1&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=qQDwEgL1K1MAX9Gn9Ck&_nc_ht=scontent.fvie1-1.fna&oh=00_AfDXXHG-AKVHDvDJPF9oE3kGRHJaQoESdF1uTxQdLgQpQw&oe=64C3F1B1",
+    image: "/images/certifications/meta.png",
     issuer: "Meta",
-    year: "2023",
+    year: "2024",
     description:
       "Zertifizierte Expertise in Meta Ads und Social Media Marketing",
     link: "#",
   },
   {
     name: "HubSpot Inbound Marketing",
-    image:
-      "https://www.hubspot.com/hubfs/assets/hubspot.com/style-guide/brand-guidelines/guidelines_the-logo.svg",
+    image: "/images/certifications/hubspot.png",
     issuer: "HubSpot",
-    year: "2022",
+    year: "2024",
     description: "Spezialisierung auf Inbound Marketing Strategien",
     link: "#",
   },
   {
     name: "SEMrush SEO",
-    image: "https://cdn.semrush.com/static/index/semrush-logo-700x394.jpg",
+    image: "/images/certifications/semrush.png",
     issuer: "SEMrush",
-    year: "2023",
+    year: "2024",
     description:
       "Professionelle Suchmaschinenoptimierung und Content-Strategie",
     link: "#",
@@ -164,13 +161,6 @@ export default function Certifications() {
                   <p className="text-sm text-gray-600 mb-6 flex-grow">
                     {cert.description}
                   </p>
-                  <a
-                    href={cert.link}
-                    className="inline-flex items-center text-sm font-medium text-brand-secondary hover:text-brand-primary transition-colors duration-300 mt-auto"
-                  >
-                    Zertifikat ansehen
-                    <ExternalLink className="ml-1 w-4 h-4" />
-                  </a>
                 </div>
               </motion.div>
             ))}
@@ -238,13 +228,6 @@ export default function Certifications() {
                 <p className="text-xs text-gray-500 mb-2">
                   Ausgestellt von {cert.issuer}
                 </p>
-                <a
-                  href={cert.link}
-                  className="inline-flex items-center text-xs font-medium text-brand-secondary mt-2"
-                >
-                  Details
-                  <ExternalLink className="ml-1 w-3 h-3" />
-                </a>
               </div>
             </motion.div>
           ))}

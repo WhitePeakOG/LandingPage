@@ -19,7 +19,11 @@ export default function AboutUs() {
       bio: "Digital Marketing Experte mit langjähriger Erfahrung in der Entwicklung erfolgreicher Marketing-Strategien.",
       expertise: ["Content Strategy", "SEO", "Business Development"],
       social: [
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
+        {
+          icon: Linkedin,
+          href: "https://www.linkedin.com/in/bastian-haider-aa0793308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          label: "LinkedIn",
+        },
         { icon: Mail, href: "mailto:b.haider@whitepeak.at", label: "Email" },
       ],
       gradient: "from-blue-500 to-purple-600",
@@ -27,12 +31,16 @@ export default function AboutUs() {
     },
     {
       name: "Dario Bjelobrk",
-      role: "Co-Founder & CTO",
+      role: "Co-Founder & CEO",
       image: "https://api.dicebear.com/7.x/avataaars/svg?seed=dario",
       bio: "Vertriebs- und Marketingexperte mit Fokus auf innovative Lösungen und nachhaltige Kundenbeziehungen.",
       expertise: ["Performance Marketing", "Analytics", "CRM"],
       social: [
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
+        {
+          icon: Linkedin,
+          href: "https://www.linkedin.com/in/dario-bjelobrk-0263142b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          label: "LinkedIn",
+        },
         { icon: Mail, href: "mailto:d.bjelobrk@whitepeak.at", label: "Email" },
       ],
       gradient: "from-emerald-500 to-blue-600",

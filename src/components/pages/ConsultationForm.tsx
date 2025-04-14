@@ -2,7 +2,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useState } from "react";
-import { saveContactToDatabase } from "@/lib/emailService";
+import { saveContactToDatabase, ContactFormData } from "@/lib/emailService";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -93,30 +94,74 @@ export default function ConsultationForm() {
       setSubmitError(null);
 
       // Prepare data for database
-      const contactData = {
-        ...values,
+      const contactData: ContactFormData = {
+        firstName: values.firstName,
+        lastName: values.lastName,
+        email: values.email,
+        phone: values.phone,
+        company: values.company || "",
+        services: values.services,
+        message: values.message,
+        urgency: values.urgency || "medium",
+        budget: values.budget || "none",
+        newsletter: values.newsletter || false,
         createdAt: new Date().toISOString(),
       };
 
-      // Check if Supabase is configured
-      if (
-        !import.meta.env.VITE_SUPABASE_URL ||
-        !import.meta.env.VITE_SUPABASE_ANON_KEY
-      ) {
-        console.log("Supabase not configured, skipping database save");
-        // For demo purposes, simulate success without actual database save
-        setTimeout(() => {
-          setIsSubmitted(true);
-          setIsSubmitting(false);
-        }, 1500);
-        return;
+      // Send email directly without database
+      try {
+        // Create template parameters for EmailJS
+        const templateParams = {
+          to_email: "office@whitepeak.at",
+          from_name: `${contactData.firstName} ${contactData.lastName}`,
+          from_email: contactData.email,
+          subject: `Neue Kontaktanfrage von ${contactData.firstName} ${contactData.lastName}`,
+          firstName: contactData.firstName,
+          lastName: contactData.lastName,
+          email: contactData.email,
+          phone: contactData.phone,
+          company: contactData.company || "Nicht angegeben",
+          services: contactData.services.join(", "),
+          message: contactData.message,
+          urgency: contactData.urgency || "Nicht angegeben",
+          budget: contactData.budget || "Nicht angegeben",
+          newsletter: contactData.newsletter ? "Ja" : "Nein",
+          createdAt: new Date(contactData.createdAt).toLocaleString("de-AT"),
+        };
+
+        // Send email using EmailJS
+        const response = await emailjs.send(
+          "service_id", // Replace with your EmailJS service ID
+          "template_id", // Replace with your EmailJS template ID
+          templateParams,
+          "public_key", // Replace with your EmailJS public key
+        );
+
+        if (!response.ok) {
+          throw new Error("Fehler beim Senden der E-Mail");
+        }
+
+        console.log("Email sent successfully");
+      } catch (emailError) {
+        console.error("Error sending email:", emailError);
+        // Continue with form submission even if email fails
       }
 
-      // Save to database and send notification email
-      const result = await saveContactToDatabase(contactData);
+      // For demo purposes or as fallback, we can still use Supabase if configured
+      if (
+        import.meta.env.VITE_SUPABASE_URL &&
+        import.meta.env.VITE_SUPABASE_ANON_KEY
+      ) {
+        // Save to database and send notification email through Supabase
+        const result = await saveContactToDatabase(contactData);
 
-      if (!result.success) {
-        throw new Error("Fehler beim Speichern der Daten");
+        if (!result.success) {
+          console.warn("Supabase save failed, but form submission continues");
+        }
+      } else {
+        console.log("Supabase not configured, skipping database save");
+        // Simulate success without actual database save
+        await new Promise((resolve) => setTimeout(resolve, 1500));
       }
 
       // Update UI state

@@ -5,27 +5,49 @@ export default function ClientLogos() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
-  // Client logos from uploaded images
+  // Client logos from uploaded images with their respective website links
   const logos = [
     {
       id: 1,
       alt: "Pegasus Solution",
-      src: "/images/clients/pegasus.png",
+      src: "/images/clients/pegasus.svg",
+      href: "https://pegasus-solution.com",
     },
     {
       id: 2,
       alt: "Sun Energy",
-      src: "/images/clients/sun-energy.png",
+      src: "/images/clients/huber.png",
+      href: "https://huber-signage.eu",
     },
     {
       id: 3,
       alt: "Blocks Tech",
-      src: "/images/clients/blocks.png",
+      src: "/images/clients/gruss.svg",
+      href: "https://grusee.com",
     },
     {
       id: 4,
       alt: "Servas AI",
-      src: "/images/clients/servas.png",
+      src: "/images/clients/servas.svg",
+      href: "https://servas.ai",
+    },
+    {
+      id: 5,
+      alt: "Softwarebude",
+      src: "/images/clients/softwarebude.png",
+      href: "https://softwarebude.at",
+    },
+    {
+      id: 6,
+      alt: "Fluently",
+      src: "/images/clients/fluently.png",
+      href: "https://fluently.at",
+    },
+    {
+      id: 7,
+      alt: "MichaelSoegner",
+      src: "/images/clients/ms.svg",
+      href: "https://michaelsoegner.com",
     },
   ];
 
@@ -76,6 +98,7 @@ export default function ClientLogos() {
                   repeat: Infinity,
                   ease: "linear",
                   repeatType: "loop",
+                  repeatDelay: 0,
                 },
               }}
             >
@@ -84,11 +107,19 @@ export default function ClientLogos() {
                   key={`${logo.id}-${index}`}
                   className="flex-shrink-0 mx-8 w-[150px] opacity-80 hover:opacity-100 transition-opacity duration-300"
                 >
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
-                  />
+                  <a
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                    aria-label={`Besuchen Sie ${logo.alt}`}
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-16 w-[150px] object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </a>
                 </div>
               ))}
             </motion.div>

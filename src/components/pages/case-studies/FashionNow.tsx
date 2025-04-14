@@ -19,7 +19,7 @@ export default function FashionNowCaseStudy() {
         <title>E-Commerce Performance Marketing | WhitePeak Case Study</title>
         <meta
           name="description"
-          content="Erfahren Sie, wie WhitePeak durch optimierte Meta & Google Ads Kampagnen den ROAS um 180% steigern und die Conversion-Rate für FashionNow um 75% erhöhen konnte."
+          content="Erfahren Sie, wie WhitePeak durch optimierte Meta & Google Ads Kampagnen den ROAS um 180% steigern und die Conversion-Rate für Grusee um 75% erhöhen konnte."
         />
       </Helmet>
       <Header />
@@ -61,12 +61,12 @@ export default function FashionNowCaseStudy() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/80 to-brand-primary/80 opacity-60 mix-blend-multiply z-10"></div>
                     <img
                       src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
-                      alt="FashionNow E-Commerce Performance Marketing"
+                      alt="Grusee E-Commerce Performance Marketing"
                       className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                       <h3 className="text-white text-lg font-bold mb-1">
-                        FashionNow
+                        Grusee
                       </h3>
                       <p className="text-white/80 text-sm">E-Commerce</p>
                     </div>
@@ -127,15 +127,15 @@ export default function FashionNowCaseStudy() {
                     Die Herausforderung
                   </h2>
                   <p className="text-gray-600 mb-8">
-                    FashionNow, ein aufstrebender Online-Shop für nachhaltige
-                    Mode, stand vor mehreren Herausforderungen im digitalen
-                    Marketing. Trotz eines stetig wachsenden Marktes für
-                    nachhaltige Produkte und einer qualitativ hochwertigen
-                    Produktpalette blieben die Conversion-Raten niedrig und die
-                    Werbeausgaben erzielten nicht den gewünschten ROI. Die
-                    bestehenden Kampagnen auf Google und Meta Ads waren
-                    unzureichend optimiert, zielten auf zu breite Zielgruppen ab
-                    und litten unter ineffizienten Budgetallokationen.
+                    Grusee, ein aufstrebender Online-Shop für nachhaltige Mode,
+                    stand vor mehreren Herausforderungen im digitalen Marketing.
+                    Trotz eines stetig wachsenden Marktes für nachhaltige
+                    Produkte und einer qualitativ hochwertigen Produktpalette
+                    blieben die Conversion-Raten niedrig und die Werbeausgaben
+                    erzielten nicht den gewünschten ROI. Die bestehenden
+                    Kampagnen auf Google und Meta Ads waren unzureichend
+                    optimiert, zielten auf zu breite Zielgruppen ab und litten
+                    unter ineffizienten Budgetallokationen.
                   </p>
 
                   <div className="border-l-4 border-purple-500 pl-6 py-2 mb-8 bg-gray-50">
@@ -148,7 +148,7 @@ export default function FashionNowCaseStudy() {
                       Ergebnisse zu erzielen."
                     </p>
                     <p className="text-gray-500 text-sm mt-2">
-                      - Julia Schmidt, E-Commerce Managerin bei FashionNow
+                      - Jakob Gruss, CEO bei Grusee
                     </p>
                   </div>
 
@@ -244,7 +244,7 @@ export default function FashionNowCaseStudy() {
                   <h2 className="text-2xl font-bold mb-6">Die Ergebnisse</h2>
                   <p className="text-gray-600 mb-6">
                     Nach drei Monaten intensiver Optimierung und
-                    kontinuierlicher Anpassung der Strategie konnte FashionNow
+                    kontinuierlicher Anpassung der Strategie konnte Grusee
                     beeindruckende Ergebnisse verzeichnen:
                   </p>
 
@@ -313,14 +313,14 @@ export default function FashionNowCaseStudy() {
                         </p>
                         <div className="flex items-center">
                           <img
-                            src="https://api.dicebear.com/7.x/avataaars/svg?seed=julia"
-                            alt="Julia Schmidt"
+                            src="https://api.dicebear.com/7.x/avataaars/svg?seed=jakob"
+                            alt="Jakob Gruss"
                             className="w-12 h-12 rounded-full mr-4"
                           />
                           <div>
-                            <p className="font-semibold">Julia Schmidt</p>
+                            <p className="font-semibold">Jakob Gruss</p>
                             <p className="text-sm text-gray-500">
-                              E-Commerce Managerin, FashionNow
+                              E-Commerce Manager, Grusee
                             </p>
                           </div>
                         </div>
@@ -333,12 +333,12 @@ export default function FashionNowCaseStudy() {
                     Durch eine Kombination aus präziser Zielgruppenanalyse,
                     optimierter Kampagnenstruktur, verbessertem
                     Conversion-Tracking und datengetriebener Budgetallokation
-                    konnten wir für FashionNow signifikante Verbesserungen in
-                    allen relevanten Performance-Kennzahlen erzielen. Die
-                    Ergebnisse zeigen, dass ein strategischer, analytischer
-                    Ansatz im Performance Marketing zu einer deutlichen
-                    Steigerung des ROI führen kann, selbst in einem
-                    wettbewerbsintensiven Markt wie dem E-Commerce für Mode.
+                    konnten wir für Grusee signifikante Verbesserungen in allen
+                    relevanten Performance-Kennzahlen erzielen. Die Ergebnisse
+                    zeigen, dass ein strategischer, analytischer Ansatz im
+                    Performance Marketing zu einer deutlichen Steigerung des ROI
+                    führen kann, selbst in einem wettbewerbsintensiven Markt wie
+                    dem E-Commerce für Mode.
                   </p>
 
                   <div className="border-t border-gray-100 pt-8">

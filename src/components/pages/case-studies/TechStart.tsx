@@ -17,11 +17,11 @@ export default function TechStartCaseStudy() {
     <div className="min-h-screen bg-background flex flex-col">
       <Helmet>
         <title>
-          Social Media Kampagne für Tech-Startup | WhitePeak Case Study
+          Social Media Kampagne für Servas.AI | WhitePeak Case Study
         </title>
         <meta
           name="description"
-          content="Erfahren Sie, wie WhitePeak durch eine maßgeschneiderte Social Media Strategie das Engagement um 250% steigern und die Lead-Generierung für TechStart GmbH mehr als verdoppeln konnte."
+          content="Erfahren Sie, wie WhitePeak durch eine maßgeschneiderte Social Media Strategie das Engagement um 250% steigern und die Lead-Generierung für Servas.AI FlexCo. mehr als verdoppeln konnte."
         />
       </Helmet>
       <Header />
@@ -63,12 +63,12 @@ export default function TechStartCaseStudy() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-secondary/80 to-brand-primary/80 opacity-60 mix-blend-multiply z-10"></div>
                     <img
                       src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop&q=60"
-                      alt="TechStart GmbH Social Media Kampagne"
+                      alt="Servas.AI Social Media Kampagne"
                       className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                       <h3 className="text-white text-lg font-bold mb-1">
-                        TechStart GmbH
+                        Servas.AI
                       </h3>
                       <p className="text-white/80 text-sm">SaaS / Tech</p>
                     </div>
@@ -129,14 +129,13 @@ export default function TechStartCaseStudy() {
                     Die Herausforderung
                   </h2>
                   <p className="text-gray-600 mb-8">
-                    TechStart GmbH, ein aufstrebendes SaaS-Unternehmen, stand
-                    vor der Herausforderung, seine Markenbekanntheit zu steigern
-                    und qualifizierte Leads für seine innovative
-                    Projektmanagement-Software zu generieren. Trotz eines
-                    qualitativ hochwertigen Produkts fehlte es dem Unternehmen
-                    an einer kohärenten Social-Media-Präsenz und einer
-                    effektiven Content-Strategie, um die richtige Zielgruppe
-                    anzusprechen und zu konvertieren.
+                    Servas.AI, ein aufstrebendes KI-Unternehmen, stand vor der
+                    Herausforderung, seine Markenbekanntheit zu steigern und
+                    qualifizierte Leads für seine innovative KI-Software zu
+                    generieren. Trotz eines qualitativ hochwertigen Produkts
+                    fehlte es dem Unternehmen an einer kohärenten
+                    Social-Media-Präsenz und einer effektiven Content-Strategie,
+                    um die richtige Zielgruppe anzusprechen und zu konvertieren.
                   </p>
 
                   <div className="border-l-4 border-brand-secondary pl-6 py-2 mb-8 bg-gray-50">
@@ -148,7 +147,7 @@ export default function TechStartCaseStudy() {
                       Leads."
                     </p>
                     <p className="text-gray-500 text-sm mt-2">
-                      - Michael Berger, CMO bei TechStart GmbH
+                      - Martin Hausleitner, CEO bei Servas.AI Flex.
                     </p>
                   </div>
 
@@ -214,7 +213,7 @@ export default function TechStartCaseStudy() {
                         </h3>
                         <p className="text-gray-600">
                           Wir entwickelten und optimierten zielgerichtete
-                          Werbekampagnen auf LinkedIn und Twitter, die auf
+                          Werbekampagnen auf LinkedIn und Facebook, die auf
                           spezifische Berufsgruppen, Branchen und
                           Interessengebiete ausgerichtet waren, um die
                           Reichweite zu maximieren und qualifizierte Leads zu
@@ -227,7 +226,7 @@ export default function TechStartCaseStudy() {
                   <h2 className="text-2xl font-bold mb-6">Die Ergebnisse</h2>
                   <p className="text-gray-600 mb-6">
                     Innerhalb von sechs Monaten nach der Implementierung unserer
-                    Strategie konnte TechStart GmbH beeindruckende Ergebnisse
+                    Strategie konnte Servas.AI FlexCo. beeindruckende Ergebnisse
                     verzeichnen:
                   </p>
 
@@ -289,14 +288,14 @@ export default function TechStartCaseStudy() {
                         </p>
                         <div className="flex items-center">
                           <img
-                            src="https://api.dicebear.com/7.x/avataaars/svg?seed=michael"
-                            alt="Michael Berger"
+                            src="/images/clients/marting.png"
+                            alt="Martin Hausleitner"
                             className="w-12 h-12 rounded-full mr-4"
                           />
                           <div>
-                            <p className="font-semibold">Michael Berger</p>
+                            <p className="font-semibold">Martin Hausleitner</p>
                             <p className="text-sm text-gray-500">
-                              CMO, TechStart GmbH
+                              CEO, Servas.Ai FlexCo.
                             </p>
                           </div>
                         </div>
@@ -309,7 +308,7 @@ export default function TechStartCaseStudy() {
                     Durch eine strategische Kombination aus
                     zielgruppenspezifischem Content, proaktivem Community
                     Management und gezielten Werbekampagnen konnten wir
-                    TechStart GmbH dabei helfen, ihre Social-Media-Präsenz
+                    Servas.AI FlexCo. dabei helfen, ihre Social-Media-Präsenz
                     signifikant zu verbessern, das Engagement zu steigern und
                     qualifizierte Leads zu generieren. Die Ergebnisse zeigen
                     deutlich, dass ein durchdachter, datengetriebener Ansatz im

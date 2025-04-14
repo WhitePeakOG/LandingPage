@@ -4,7 +4,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Twitter,
   ArrowRight,
   Mail,
   MapPin,
@@ -12,6 +11,7 @@ import {
   ChevronRight,
   CheckCircle,
 } from "lucide-react";
+import { TikTok } from "@/components/ui/tiktok-icon";
 import { useState } from "react";
 
 export default function Footer() {
@@ -33,7 +33,6 @@ export default function Footer() {
       { name: "Leistungen", href: "/#services" },
       { name: "Erfolge", href: "/#case-study" },
       { name: "FAQ", href: "/#faq" },
-      { name: "Blog", href: "/blog" },
     ],
     services: [
       { name: "Content Marketing", href: "/services/content-marketing" },
@@ -48,10 +47,30 @@ export default function Footer() {
       },
     ],
     social: [
-      { name: "Facebook", icon: Facebook, href: "#" },
-      { name: "Instagram", icon: Instagram, href: "#" },
-      { name: "Twitter", icon: Twitter, href: "#" },
-      { name: "LinkedIn", icon: Linkedin, href: "#" },
+      {
+        name: "Facebook",
+        icon: Facebook,
+        href: "https://www.facebook.com/profile.php?id=61572999612131&mibextid=wwXIfr",
+        ariaLabel: "Besuchen Sie uns auf Facebook",
+      },
+      {
+        name: "Instagram",
+        icon: Instagram,
+        href: "https://www.instagram.com/whitepeakofficial?igsh=cHkyamx3bzJyZWN1",
+        ariaLabel: "Folgen Sie uns auf Instagram",
+      },
+      {
+        name: "TikTok",
+        icon: TikTok,
+        href: "https://www.tiktok.com/@whitepeakofficial?_t=ZN-8vKw3fD79Rm&_r=1",
+        ariaLabel: "Folgen Sie uns auf TikTok",
+      },
+      {
+        name: "LinkedIn",
+        icon: Linkedin,
+        href: "#",
+        ariaLabel: "Vernetzen Sie sich mit uns auf LinkedIn",
+      },
     ],
   };
 
@@ -59,7 +78,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden">
       <div className="bg-white pt-16 pb-8">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12 border-b border-gray-100 pb-8">
             {/* Company Info */}
             <div className="lg:col-span-4 space-y-6">
               <div className="flex items-center">
@@ -91,13 +110,15 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex space-x-3 pt-2">
+              <div className="flex space-x-4 pt-2">
                 {navigation.social.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="group flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
-                    aria-label={item.name}
+                    className="group flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
+                    aria-label={item.ariaLabel}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <item.icon className="h-4 w-4 text-gray-500 group-hover:text-brand-secondary/80 transition-colors duration-300" />
                   </a>
@@ -187,19 +208,31 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-100 pt-8">
+          <div className="pt-4">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <p className="text-brand-dark/60 text-sm">
                 © {new Date().getFullYear()} WhitePeak. Alle Rechte
                 vorbehalten.
               </p>
-              <div className="flex gap-6">
+              <div className="flex gap-6 flex-wrap">
                 <a
                   href="/datenschutz"
                   className="text-brand-dark/60 hover:text-brand-secondary/80 text-sm transition-colors duration-200"
                 >
                   Datenschutzerklärung
                 </a>
+                <a
+                  href="/cookie-policy"
+                  className="text-brand-dark/60 hover:text-brand-secondary/80 text-sm transition-colors duration-200"
+                >
+                  Cookie-Richtlinie
+                </a>
+                <button
+                  onClick={() => window.openCookieSettings?.()}
+                  className="text-brand-dark/60 hover:text-brand-secondary/80 text-sm transition-colors duration-200 bg-transparent border-none p-0 cursor-pointer"
+                >
+                  Cookie-Einstellungen
+                </button>
                 <a
                   href="/agb"
                   className="text-brand-dark/60 hover:text-brand-secondary/80 text-sm transition-colors duration-200"

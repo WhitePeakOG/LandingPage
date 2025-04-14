@@ -19,7 +19,7 @@ export default function IndustrySolutionsCaseStudy() {
         <title>B2B Content & SEO Strategie | WhitePeak Case Study</title>
         <meta
           name="description"
-          content="Erfahren Sie, wie WhitePeak durch SEO-optimierten Content und gezielte Backlink-Strategie den organischen Traffic für IndustrySolutions vervierfachen und die Anzahl der qualifizierten Leads deutlich steigern konnte."
+          content="Erfahren Sie, wie WhitePeak durch SEO-optimierten Content und gezielte Backlink-Strategie den organischen Traffic für Huber Signage vervierfachen und die Anzahl der qualifizierten Leads deutlich steigern konnte."
         />
       </Helmet>
       <Header />
@@ -62,12 +62,12 @@ export default function IndustrySolutionsCaseStudy() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-emerald-600/80 to-brand-primary/80 opacity-60 mix-blend-multiply z-10"></div>
                     <img
                       src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&auto=format&fit=crop&q=60"
-                      alt="IndustrySolutions B2B Content & SEO Strategie"
+                      alt="Huber Signage B2B Content & SEO Strategie"
                       className="w-full h-full object-cover object-center"
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                       <h3 className="text-white text-lg font-bold mb-1">
-                        IndustrySolutions
+                        Huber Signage
                       </h3>
                       <p className="text-white/80 text-sm">
                         B2B / Manufacturing
@@ -130,9 +130,8 @@ export default function IndustrySolutionsCaseStudy() {
                     Die Herausforderung
                   </h2>
                   <p className="text-gray-600 mb-8">
-                    IndustrySolutions, ein führender Anbieter von
-                    Automatisierungslösungen für die Fertigungsindustrie, stand
-                    vor der Herausforderung, seine Online-Sichtbarkeit zu
+                    Huber Signage, ein führender Anbieter von Leuchtwerbung,
+                    stand vor der Herausforderung, seine Online-Sichtbarkeit zu
                     verbessern und qualifizierte Leads zu generieren. Trotz
                     eines starken Produktportfolios und jahrelanger
                     Branchenerfahrung war das Unternehmen online kaum
@@ -151,7 +150,7 @@ export default function IndustrySolutionsCaseStudy() {
                       Branchenbegriffe praktisch unsichtbar."
                     </p>
                     <p className="text-gray-500 text-sm mt-2">
-                      - Thomas Weber, Marketing Director bei IndustrySolutions
+                      - Thomas Weber, Marketing Director bei Huber Signage
                     </p>
                   </div>
 
@@ -198,7 +197,7 @@ export default function IndustrySolutionsCaseStudy() {
                           sondern auch echten Mehrwert für die Zielgruppe boten.
                           Jeder Inhalt wurde sorgfältig auf die spezifischen
                           Bedürfnisse und Fragen der Entscheidungsträger in der
-                          Fertigungsindustrie zugeschnitten.
+                          Leuchtwerbeindustrie zugeschnitten.
                         </p>
                       </div>
                     </div>
@@ -246,9 +245,9 @@ export default function IndustrySolutionsCaseStudy() {
 
                   <h2 className="text-2xl font-bold mb-6">Die Ergebnisse</h2>
                   <p className="text-gray-600 mb-6">
-                    Nach 12 Monaten intensiver Arbeit an der Content- und
-                    SEO-Strategie konnte IndustrySolutions beeindruckende
-                    Ergebnisse verzeichnen:
+                    Nach 6 Monaten intensiver Arbeit an der Content- und
+                    SEO-Strategie konnte Huber Signage beeindruckende Ergebnisse
+                    verzeichnen:
                   </p>
 
                   <ul className="space-y-4 mb-8">
@@ -324,7 +323,7 @@ export default function IndustrySolutionsCaseStudy() {
                           <div>
                             <p className="font-semibold">Thomas Weber</p>
                             <p className="text-sm text-gray-500">
-                              Marketing Director, IndustrySolutions
+                              Marketing Director, Huber Signage
                             </p>
                           </div>
                         </div>
@@ -337,7 +336,7 @@ export default function IndustrySolutionsCaseStudy() {
                     Durch eine strategische Kombination aus tiefgehender
                     Keyword-Recherche, hochwertigem Fachcontent, technischer
                     SEO-Optimierung und gezieltem Linkaufbau konnten wir für
-                    IndustrySolutions eine signifikante Steigerung der
+                    Huber Signage eine signifikante Steigerung der
                     Online-Sichtbarkeit und Lead-Generierung erreichen. Die
                     Ergebnisse zeigen, dass auch in komplexen B2B-Märkten mit
                     langen Verkaufszyklen eine gut durchdachte Content- und

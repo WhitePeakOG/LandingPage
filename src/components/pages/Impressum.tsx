@@ -9,7 +9,7 @@ export default function Impressum() {
         <title>Impressum | WhitePeak OG</title>
         <meta
           name="description"
-          content="Impressum der WhitePeak Digital Marketing GmbH. Alle rechtlichen Informationen und Kontaktdaten."
+          content="Impressum der WhitePeak OG. Alle rechtlichen Informationen und Kontaktdaten."
         />
       </Helmet>
       <Header />
@@ -37,7 +37,7 @@ export default function Impressum() {
             <section>
               <h2 className="text-xl font-semibold mb-4">Kontakt</h2>
               <div className="space-y-2">
-                <p>Tel: +43 123 456789</p>
+                <p>Tel: +43 678 1256675</p>
                 <p>E-Mail: office@whitepeak.at</p>
               </div>
             </section>
@@ -47,8 +47,8 @@ export default function Impressum() {
                 Rechtliche Informationen
               </h2>
               <div className="space-y-2">
-                <p>UID-Nr: ATU12345678</p>
-                <p>Firmenbuchnummer: FN 123456a</p>
+                <p>UID-Nr: ATU81906626</p>
+                <p>Firmenbuchnummer: FN 648987v</p>
                 <p>Firmenbuchgericht: Landesgericht Wels</p>
                 <p>Geschäftsführer: Bastian Haider, Dario Bjelobrk</p>
                 <p>Mitglied der WKO</p>
