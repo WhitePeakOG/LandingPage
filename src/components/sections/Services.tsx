@@ -132,9 +132,10 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
+              className="group cursor-pointer"
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
+              onClick={() => (window.location.href = service.href)}
             >
               <div
                 className={`h-full rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 ${hoveredService === index ? "shadow-xl scale-105" : "hover:shadow-md hover:scale-102"} relative overflow-hidden`}
@@ -180,7 +181,6 @@ export default function Services() {
                 <div className="relative z-10 mt-auto">
                   <Button
                     className={`w-full bg-white border border-gray-200 hover:border-transparent hover:text-white group-hover:bg-gradient-to-r ${service.gradientFrom} ${service.gradientTo} transition-all duration-300`}
-                    onClick={() => (window.location.href = service.href)}
                   >
                     <span className="flex items-center justify-center w-full text-gray-800 group-hover:text-white">
                       Mehr erfahren

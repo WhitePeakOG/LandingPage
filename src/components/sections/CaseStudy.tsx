@@ -169,7 +169,15 @@ export default function CaseStudy() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-4 sm:gap-8 bg-white rounded-2xl shadow-lg overflow-hidden w-full`}
+                className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-4 sm:gap-8 bg-white rounded-2xl shadow-lg overflow-hidden w-full cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
+                onClick={() =>
+                  (window.location.href =
+                    index === 0
+                      ? "/case-studies/techstart"
+                      : index === 1
+                        ? "/case-studies/fashionnow"
+                        : "/case-studies/industrysolutions")
+                }
               >
                 {/* Image Section */}
                 <div className="w-full lg:w-2/5 h-56 sm:h-64 md:h-auto relative overflow-hidden group">
