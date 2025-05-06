@@ -15,7 +15,7 @@ export default function AboutUs() {
     {
       name: "Bastian Haider",
       role: "Co-Founder & CEO",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=bastian",
+      image: "/images/team/Basti2.png",
       bio: "Digital Marketing Experte mit langjähriger Erfahrung in der Entwicklung erfolgreicher Marketing-Strategien.",
       expertise: ["Content Strategy", "SEO", "Business Development"],
       social: [
@@ -32,7 +32,7 @@ export default function AboutUs() {
     {
       name: "Dario Bjelobrk",
       role: "Co-Founder & CEO",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=dario",
+      image: "/images/team/Dario2.png",
       bio: "Vertriebs- und Marketingexperte mit Fokus auf innovative Lösungen und nachhaltige Kundenbeziehungen.",
       expertise: ["Performance Marketing", "Analytics", "CRM"],
       social: [
@@ -181,7 +181,7 @@ export default function AboutUs() {
                       ease: "easeInOut",
                     }}
                   />
-                  <div className="absolute -bottom-16 left-6">
+                  <div className="absolute -bottom-8 left-6">
                     <motion.div
                       className="p-2 bg-white rounded-full ring-4 ring-white relative"
                       whileHover={{ scale: 1.05 }}
@@ -190,7 +190,7 @@ export default function AboutUs() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-24 h-24 rounded-full object-cover relative z-10"
+                        className="w-24 h-24 rounded-full object-cover bg-white relative z-10"
                       />
                     </motion.div>
                   </div>
