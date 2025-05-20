@@ -80,14 +80,14 @@ export default function ConsultationForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",       // expliziter leerer String
+      firstName: "", // expliziter leerer String
       lastName: "",
       email: "",
       phone: "",
       company: "",
-      services: [],        // Array bleibt wie gehabt
+      services: [], // Array bleibt wie gehabt
       message: "",
-      urgency: "medium",   // oder der gewünschte Standardwert
+      urgency: "medium", // oder der gewünschte Standardwert
       budget: "none",
       newsletter: false,
     },
@@ -141,7 +141,7 @@ export default function ConsultationForm() {
           "whitepeakmail", // Replace with your EmailJS service ID
           "whitepeaktemplate", // Replace with your EmailJS template ID
           templateParams,
-          { publicKey: "IUiGXftUkzg1b1CU_"}
+          { publicKey: "IUiGXftUkzg1b1CU_" },
         );
 
         console.log("response: ", response);
@@ -333,35 +333,78 @@ export default function ConsultationForm() {
             </motion.div>
           ) : (
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              {/* Team Photo */}
+              <div className="bg-gray-50 p-6 border-b text-center">
+                <img
+                  src="/images/team/White_Peak_31.jpg"
+                  alt="WhitePeak Team"
+                  className="rounded-lg shadow-md max-w-full h-auto max-h-64 mx-auto mb-4"
+                  onError={(e) => {
+                    // Fallback to a placeholder if the image doesn't exist
+                    e.currentTarget.src =
+                      "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&auto=format&fit=crop&q=60";
+                  }}
+                />
+                <p className="text-sm text-gray-600 italic">
+                  Ihr persönliches Beratungsteam freut sich auf Ihre Anfrage
+                </p>
+              </div>
+
               {/* Progress bar */}
               <div className="bg-gray-50 p-4 border-b">
                 <div className="flex justify-between items-center mb-2">
-                  {Array.from({ length: totalSteps }).map((_, index) => (
+                  <div className="flex items-center w-1/3 justify-start">
                     <div
-                      key={index}
-                      className={`flex items-center ${index > 0 ? "flex-1" : ""}`}
+                      className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep > 1 ? "bg-brand-secondary text-white" : currentStep === 1 ? "bg-brand-primary text-white" : "bg-gray-200 text-gray-500"}`}
                     >
-                      <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep > index + 1 ? "bg-brand-secondary text-white" : currentStep === index + 1 ? "bg-brand-primary text-white" : "bg-gray-200 text-gray-500"}`}
-                      >
-                        {currentStep > index + 1 ? (
-                          <CheckCircle className="w-4 h-4" />
-                        ) : (
-                          index + 1
-                        )}
-                      </div>
-                      {index < totalSteps - 1 && (
-                        <div
-                          className={`flex-1 h-1 mx-2 ${currentStep > index + 1 ? "bg-brand-secondary" : "bg-gray-200"}`}
-                        />
+                      {currentStep > 1 ? (
+                        <CheckCircle className="w-4 h-4" />
+                      ) : (
+                        1
                       )}
                     </div>
-                  ))}
+                    <div
+                      className={`h-1 ml-2 flex-grow ${currentStep > 1 ? "bg-brand-secondary" : "bg-gray-200"}`}
+                    />
+                  </div>
+
+                  <div className="flex items-center w-1/3 justify-center">
+                    <div
+                      className={`h-1 mr-2 flex-grow ${currentStep > 1 ? "bg-brand-secondary" : "bg-gray-200"}`}
+                    />
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep > 2 ? "bg-brand-secondary text-white" : currentStep === 2 ? "bg-brand-primary text-white" : "bg-gray-200 text-gray-500"}`}
+                    >
+                      {currentStep > 2 ? (
+                        <CheckCircle className="w-4 h-4" />
+                      ) : (
+                        2
+                      )}
+                    </div>
+                    <div
+                      className={`h-1 ml-2 flex-grow ${currentStep > 2 ? "bg-brand-secondary" : "bg-gray-200"}`}
+                    />
+                  </div>
+
+                  <div className="flex items-center w-1/3 justify-end">
+                    <div
+                      className={`h-1 mr-2 flex-grow ${currentStep > 2 ? "bg-brand-secondary" : "bg-gray-200"}`}
+                    />
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep > 3 ? "bg-brand-secondary text-white" : currentStep === 3 ? "bg-brand-primary text-white" : "bg-gray-200 text-gray-500"}`}
+                    >
+                      {currentStep > 3 ? (
+                        <CheckCircle className="w-4 h-4" />
+                      ) : (
+                        3
+                      )}
+                    </div>
+                  </div>
                 </div>
                 <div className="flex justify-between text-xs text-gray-500">
-                  <span>Persönliche Daten</span>
-                  <span>Dienstleistungen</span>
-                  <span>Projektdetails</span>
+                  <span className="w-1/3 text-left">Persönliche Daten</span>
+                  <span className="w-1/3 text-center">Dienstleistungen</span>
+                  <span className="w-1/3 text-right">Projektdetails</span>
                 </div>
               </div>
 

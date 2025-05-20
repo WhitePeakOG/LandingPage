@@ -213,14 +213,6 @@ export default function PerformanceMarketing() {
                       <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </Button>
-
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-purple-600 text-purple-600 hover:bg-purple-50 rounded-full px-8"
-                  >
-                    Kampagnen-Audit anfordern
-                  </Button>
                 </div>
               </div>
             </ScrollReveal>

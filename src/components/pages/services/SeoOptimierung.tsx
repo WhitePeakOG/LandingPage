@@ -139,14 +139,6 @@ export default function SeoOptimierung() {
                       <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </Button>
-
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 rounded-full px-8"
-                  >
-                    SEO Audit anfordern
-                  </Button>
                 </div>
               </div>
             </ScrollReveal>

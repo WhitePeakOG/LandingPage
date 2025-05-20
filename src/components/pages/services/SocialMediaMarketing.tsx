@@ -234,14 +234,6 @@ export default function SocialMediaMarketing() {
                       <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </Button>
-
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-rose-600 text-rose-600 hover:bg-rose-50 rounded-full px-8"
-                  >
-                    Fallstudien ansehen
-                  </Button>
                 </div>
               </div>
             </ScrollReveal>
