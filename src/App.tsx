@@ -14,6 +14,7 @@ import Webentwicklung from "./components/pages/services/Webentwicklung";
 import TechStartCaseStudy from "./components/pages/case-studies/TechStart";
 import FashionNowCaseStudy from "./components/pages/case-studies/FashionNow";
 import IndustrySolutionsCaseStudy from "./components/pages/case-studies/IndustrySolutions";
+import FluentlyFlexCoCaseStudy from "./components/pages/case-studies/FluentlyFlexCo";
 import CookieBanner from "./components/CookieBanner";
 import routes from "tempo-routes";
 
@@ -53,6 +54,10 @@ function App() {
         <Route
           path="/case-studies/industrysolutions"
           element={<IndustrySolutionsCaseStudy />}
+        />
+        <Route
+          path="/case-studies/fluently-flexco"
+          element={<FluentlyFlexCoCaseStudy />}
         />
       </Routes>
       <CookieBanner />

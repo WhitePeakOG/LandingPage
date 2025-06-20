@@ -12,7 +12,7 @@ export default function CaseStudy() {
       industry: "SaaS / Tech",
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop&q=60",
-      title: "Social Media Kampagne für Tech-Startup",
+      title: "Google SEO Optimierung für KI-Startup",
       metrics: [
         {
           label: "Engagement",
@@ -34,8 +34,8 @@ export default function CaseStudy() {
         },
       ],
       description:
-        "Durch gezielte Content-Strategie und Community Management konnten wir das Engagement signifikant steigern und die Lead-Generierung mehr als verdoppeln.",
-      tags: ["Social Media", "Content Marketing", "Lead Generation"],
+        "Durch strategische SEO-Optimierung und technische Verbesserungen konnten wir die organische Sichtbarkeit signifikant steigern und die Lead-Generierung mehr als verdoppeln.",
+      tags: ["Google SEO", "Technical SEO", "Lead Generation"],
       year: "2025",
     },
     {
@@ -67,6 +67,37 @@ export default function CaseStudy() {
       description:
         "Optimierte Meta & Google Ads Kampagnen führten zu einer deutlichen Steigerung des Return on Ad Spend und einer Conversion-Rate-Steigerung von 75%.",
       tags: ["Performance Marketing", "Google Ads", "Meta Ads"],
+      year: "2025",
+    },
+    {
+      client: "Fluently FlexCo.",
+      industry: "Business Services",
+      image:
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop&q=60",
+      title: "Performance Marketing Transformation",
+      metrics: [
+        {
+          label: "ROAS",
+          value: "+420%",
+          icon: BarChart3,
+          color: "text-purple-500",
+        },
+        {
+          label: "CPC",
+          value: "-65%",
+          icon: TrendingUp,
+          color: "text-emerald-500",
+        },
+        {
+          label: "Conversion",
+          value: "+280%",
+          icon: Users,
+          color: "text-blue-500",
+        },
+      ],
+      description:
+        "Durch strategische Kampagnenoptimierung und präzise Zielgruppenansprache konnten wir den ROAS vervierfachen und die Werbekosten drastisch senken.",
+      tags: ["Performance Marketing", "Google Ads", "Conversion Optimierung"],
       year: "2025",
     },
     {
@@ -176,7 +207,9 @@ export default function CaseStudy() {
                       ? "/case-studies/techstart"
                       : index === 1
                         ? "/case-studies/fashionnow"
-                        : "/case-studies/industrysolutions")
+                        : index === 2
+                          ? "/case-studies/fluently-flexco"
+                          : "/case-studies/industrysolutions")
                 }
               >
                 {/* Image Section */}
@@ -253,7 +286,9 @@ export default function CaseStudy() {
                           ? "/case-studies/techstart"
                           : index === 1
                             ? "/case-studies/fashionnow"
-                            : "/case-studies/industrysolutions"
+                            : index === 2
+                              ? "/case-studies/fluently-flexco"
+                              : "/case-studies/industrysolutions"
                       }
                       className="inline-flex items-center text-sm font-medium border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-4 py-2 rounded-md transition-all duration-300 group"
                     >
