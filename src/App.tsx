@@ -15,6 +15,8 @@ import TechStartCaseStudy from "./components/pages/case-studies/TechStart";
 import FashionNowCaseStudy from "./components/pages/case-studies/FashionNow";
 import IndustrySolutionsCaseStudy from "./components/pages/case-studies/IndustrySolutions";
 import FluentlyFlexCoCaseStudy from "./components/pages/case-studies/FluentlyFlexCo";
+import Blog from "./components/pages/Blog";
+import OrdiCallAIBlogPost from "./components/pages/blog-posts/OrdiCallAI";
 import CookieBanner from "./components/CookieBanner";
 import routes from "tempo-routes";
 
@@ -58,6 +60,11 @@ function App() {
         <Route
           path="/case-studies/fluently-flexco"
           element={<FluentlyFlexCoCaseStudy />}
+        />
+        <Route path="/blog" element={<Blog />} />
+        <Route
+          path="/blog/ordicall-ai-revolutionizing-business-communication"
+          element={<OrdiCallAIBlogPost />}
         />
       </Routes>
       <CookieBanner />

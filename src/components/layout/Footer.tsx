@@ -32,6 +32,7 @@ export default function Footer() {
       { name: "Über uns", href: "/#about" },
       { name: "Leistungen", href: "/#services" },
       { name: "Erfolge", href: "/#case-study" },
+      { name: "Blog", href: "/blog" },
       { name: "FAQ", href: "/#faq" },
     ],
     services: [

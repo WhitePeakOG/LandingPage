@@ -54,6 +54,7 @@ export default function Header() {
   const menuItems = [
     { href: "/#services", label: "Unsere Leistungen" },
     { href: "/#case-study", label: "Erfolge" },
+    { href: "/blog", label: "Blog" },
     { href: "/#about", label: "Über uns" },
     { href: "/#faq", label: "FAQ" },
   ];

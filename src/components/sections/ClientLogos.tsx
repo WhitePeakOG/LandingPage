@@ -68,6 +68,12 @@ export default function ClientLogos() {
       src: "/images/clients/nanopics.svg",
       href: "https://www.nano-pics.at",
     },
+    {
+      id: 8,
+      alt: "Ordicall.ai",
+      src: "/images/clients/ordicall.svg",
+      href: "https://ordicall.ai",
+    },
   ];
 
   // Animation duration (Mobile faster)
